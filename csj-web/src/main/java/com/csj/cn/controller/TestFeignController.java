@@ -1,6 +1,8 @@
 package com.csj.cn.controller;
 
 import com.csj.cn.feign.TestFeign;
+import io.swagger.annotations.Api;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

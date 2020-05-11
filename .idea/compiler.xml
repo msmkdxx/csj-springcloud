@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="csj-common" />
         <module name="csj-service" />
         <module name="csj-eureka" />
         <module name="csj-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="csj-common" target="1.8" />
       <module name="csj-eureka" target="1.8" />
       <module name="csj-service" target="1.8" />
       <module name="csj-springcloud" target="1.8" />
@@ -20,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="csj-common" options="" />
       <module name="csj-eureka" options="" />
       <module name="csj-service" options="" />
       <module name="csj-springcloud" options="" />

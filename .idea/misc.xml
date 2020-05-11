@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/csj-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/csj-service/pom.xml" />
         <option value="$PROJECT_DIR$/csj-web/pom.xml" />
+        <option value="$PROJECT_DIR$/csj-common/pom.xml" />
       </list>
     </option>
   </component>

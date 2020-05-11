@@ -41,6 +41,18 @@
             <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
         <!-- spring-cloud-starter-feign 结束 -->
+        <dependency>
+            <groupId>com.csj.cn</groupId>
+            <artifactId>csj-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- guava 开始 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.2-jre</version>
+        </dependency>
+        <!-- guava 结束 -->
     </dependencies>
 
     <dependencyManagement>
