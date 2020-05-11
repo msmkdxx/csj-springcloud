@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/csj-eureka/csj-eureka.iml" filepath="$PROJECT_DIR$/csj-eureka/csj-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csj-service/csj-service.iml" filepath="$PROJECT_DIR$/csj-service/csj-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csj-springcloud.iml" filepath="$PROJECT_DIR$/csj-springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csj-web/csj-web.iml" filepath="$PROJECT_DIR$/csj-web/csj-web.iml" />
+    </modules>
+  </component>
+</project>

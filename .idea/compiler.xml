@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="csj-service" />
+        <module name="csj-eureka" />
+        <module name="csj-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="csj-eureka" target="1.8" />
+      <module name="csj-service" target="1.8" />
+      <module name="csj-springcloud" target="1.8" />
+      <module name="csj-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="csj-eureka" options="" />
+      <module name="csj-service" options="" />
+      <module name="csj-springcloud" options="" />
+      <module name="csj-web" options="" />
+    </option>
+  </component>
+</project>
