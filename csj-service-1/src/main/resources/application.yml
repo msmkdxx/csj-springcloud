@@ -1,0 +1,36 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: csj-service
+  datasource:
+    master:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/bkp?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+    slave:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/bkp?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+  #消息中间件
+  activemq:
+    brokerUrl: tcp://127.0.0.1:61616
+    #代理
+    in-memory: true
+    #保证消息顺序性
+    non-blocking-redelivery: false
+    #等待消息发送反应时间 0代表永远
+    send-timeout: 0
+    user: admin
+    password: admin
+    packages:
+      trust-all: true
+  #默认情况下activemq提供的是queue点对点模式，如果要使用topic 则选择true
+  jms:
+    pub-sub-domain: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

@@ -25,6 +25,8 @@
 
     <modules>
         <module>csj-service</module>
+        <module>csj-service-1</module>
+        <module>csj-service-a</module>
         <module>csj-web</module>
         <module>csj-common</module>
     </modules>

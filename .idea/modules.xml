@@ -5,8 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/csj-common/csj-common.iml" filepath="$PROJECT_DIR$/csj-common/csj-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/csj-eureka/csj-eureka.iml" filepath="$PROJECT_DIR$/csj-eureka/csj-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/csj-service/csj-service.iml" filepath="$PROJECT_DIR$/csj-service/csj-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csj-service-1/csj-service-1.iml" filepath="$PROJECT_DIR$/csj-service-1/csj-service-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csj-service-a/csj-service-a.iml" filepath="$PROJECT_DIR$/csj-service-a/csj-service-a.iml" />
       <module fileurl="file://$PROJECT_DIR$/csj-springcloud.iml" filepath="$PROJECT_DIR$/csj-springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/csj-web/csj-web.iml" filepath="$PROJECT_DIR$/csj-web/csj-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csj-zuul/csj-zuul.iml" filepath="$PROJECT_DIR$/csj-zuul/csj-zuul.iml" />
     </modules>
   </component>
 </project>

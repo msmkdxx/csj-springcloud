@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Author chensijia
  * @Date 2020/5/1112:04
  */
-@FeignClient(name = "csj-service")
+@FeignClient(name = "csj-service",fallback = TestFeignHystrix.class)
 public interface TestFeign {
 
     @GetMapping(value = "/test/getNum")

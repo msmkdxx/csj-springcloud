@@ -7,17 +7,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="csj-common" />
-        <module name="csj-service" />
-        <module name="csj-eureka" />
         <module name="csj-web" />
+        <module name="csj-eureka" />
+        <module name="csj-service" />
+        <module name="csj-zuul" />
+        <module name="csj-service-1" />
+        <module name="csj-service-a" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="csj-common" target="1.8" />
       <module name="csj-eureka" target="1.8" />
       <module name="csj-service" target="1.8" />
+      <module name="csj-service-1" target="1.8" />
+      <module name="csj-service-a" target="1.8" />
       <module name="csj-springcloud" target="1.8" />
       <module name="csj-web" target="1.8" />
+      <module name="csj-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,8 +31,10 @@
       <module name="csj-common" options="" />
       <module name="csj-eureka" options="" />
       <module name="csj-service" options="" />
+      <module name="csj-service-1" options="" />
       <module name="csj-springcloud" options="" />
       <module name="csj-web" options="" />
+      <module name="csj-zuul" options="" />
     </option>
   </component>
 </project>
