@@ -35,7 +35,7 @@ public class EmployeeFeignApi {
     }
 
     @GetMapping(value = "/delEmployees")
-    public boolean delEmployees(@RequestParam(value = "id") Integer... id) {
+    public boolean delEmployees(@RequestParam(value = "id") Long... id) {
         return employeeService.delEmployees(id);
     }
 

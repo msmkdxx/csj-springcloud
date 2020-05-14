@@ -2,7 +2,9 @@ package com.csj.cn.mapper;
 
 import com.csj.cn.dto.Employee;
 import com.csj.cn.dto.EmployeeExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface EmployeeMapper {
@@ -93,4 +95,12 @@ public interface EmployeeMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Employee record);
+
+    /**
+     * 批量添加员工
+     *
+     * @param employeeList
+     * @return
+     */
+    int insertEmployees(@Param("employees") List<Employee> employeeList);
 }

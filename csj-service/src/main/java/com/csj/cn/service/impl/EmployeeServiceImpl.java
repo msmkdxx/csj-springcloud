@@ -49,7 +49,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         EmployeeExample employeeExample = new EmployeeExample();
         employeeExample.createCriteria().andIdIn(Arrays.asList(id));
         Employee employee = new Employee();
-        employee.setDelFlag(0);
+        employee.setDelFlag(1);
         return employeeMapper.updateByExampleSelective(employee, employeeExample) == id.length;
     }
 }

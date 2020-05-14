@@ -332,4 +332,61 @@
       entry_date = #{entryDate,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  <insert id="insertEmployees" parameterType="com.csj.cn.dto.Employee">
+    insert into employee
+    <foreach collection="employees" item="employee" separator=",">
+      <trim prefix="(" suffix=")" suffixOverrides=",">
+        <if test="employee.name != null">
+          `name`,
+        </if>
+        <if test="employee.phone != null">
+          phone,
+        </if>
+        <if test="employee.age != null">
+          age,
+        </if>
+        <if test="employee.sex != null">
+          sex,
+        </if>
+        <if test="employee.education != null">
+          education,
+        </if>
+        <if test="employee.deptId != null">
+          dept_id,
+        </if>
+        <if test="employee.delFlag != null">
+          del_flag,
+        </if>
+        <if test="employee.entryDate != null">
+          entry_date,
+        </if>
+      </trim>
+      <trim prefix="values (" suffix=")" suffixOverrides=",">
+        <if test="employee.name != null">
+          #{employee.name,jdbcType=VARCHAR},
+        </if>
+        <if test="employee.phone != null">
+          #{employee.phone,jdbcType=VARCHAR},
+        </if>
+        <if test="employee.age != null">
+          #{employee.age,jdbcType=INTEGER},
+        </if>
+        <if test="employee.sex != null">
+          #{employee.sex,jdbcType=INTEGER},
+        </if>
+        <if test="employee.education != null">
+          #{employee.education,jdbcType=VARCHAR},
+        </if>
+        <if test="employee.deptId != null">
+          #{employee.deptId,jdbcType=INTEGER},
+        </if>
+        <if test="employee.delFlag != null">
+          #{employee.delFlag,jdbcType=INTEGER},
+        </if>
+        <if test="entryDate != null">
+          #{employee.entryDate,jdbcType=TIMESTAMP},
+        </if>
+      </trim>
+    </foreach>
+  </insert>
 </mapper>
