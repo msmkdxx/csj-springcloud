@@ -1,0 +1,27 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+#微信登录
+wx:
+  appId: wx149df6a54ba16be5
+  redirectUri: https://17e6bc69.ngrok.io/wx/callBack
+  responseType: code
+  scope: snsapi_userinfo
+  codeUrl: https://open.weixin.qq.com/connect/oauth2/authorize
+  accessTokenUrl: https://api.weixin.qq.com/sns/oauth2/access_token
+  secret: fb5502ee728445436e7ce1f8efeef677
+  grantType: authorization_code
+  userInfoUrl: https://api.weixin.qq.com/sns/userinfo
+  loginSuccess: http://127.0.0.1:8080/wxLoginSuccess?wxToken=
+  loginFail: http://127.0.0.1:8080/wxLoginFail
+
+#微信支付
+wxPay:
+  appId: wxab8acb865bb1637e
+  mchId: 11473623
+  notifyUrl: https://17e6bc69.ngrok.io/wxPay/wxPayNotify
+  key: 2ab9071b06b9f739b950ddb41db2690d
+  unifiedUrl: https://api.mch.weixin.qq.com/pay/unifiedorder
+  wxPaySuccess: http://127.0.0.1:8080/www.baidu.com
+

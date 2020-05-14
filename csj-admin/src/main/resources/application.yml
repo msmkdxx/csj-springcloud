@@ -1,19 +1,13 @@
 server:
-  port: 8080
+  port: 2020
 spring:
   application:
-    name: csj-service
+    name: csj-admin
   datasource:
-    master:
-      driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/hr?useUnicode=true&characterEncoding=utf8
-      username: root
-      password: root
-    slave:
-      driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/bkp?useUnicode=true&characterEncoding=utf8
-      username: root
-      password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hr?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
   #消息中间件
   activemq:
     brokerUrl: tcp://127.0.0.1:61616
@@ -32,5 +26,5 @@ spring:
     pub-sub-domain: false
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8761/eureka
