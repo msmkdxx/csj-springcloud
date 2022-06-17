@@ -39,7 +39,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
+            <version>1.2.83</version>
         </dependency>
         <!-- fastjson 结束 -->
         <!-- springfox-swagger2 开始 -->
